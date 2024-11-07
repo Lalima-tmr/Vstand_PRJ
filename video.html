@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorials</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <link href="./video.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1>Video Tutorials</h1>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./Dashboard.html">Dashboard</a></li>
+            <li><a href="./home.html">Help</a></li>
+            <li><a href="./login.html" onclick="logout()">Logout</a></li>
+          </ul>
+        <button id="modeToggle" aria-label="Toggle light/dark mode">🌙</button>
+        </nav>
+
+    <div class="video-container">
+        <div class="video-wrapper" id="video1Wrapper">
+            <video id="video1" controls>
+                <source src="./images/vid1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-wrapper" id="video2Wrapper">
+            <div class="locked" id="lock2">Watch the first video to unlock</div>
+            <video id="video2" style="pointer-events: none;">
+                <source src="./images/vid1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-wrapper" id="video3Wrapper">
+            <div class="locked" id="lock3">Watch the second video to unlock</div>
+            <video id="video3" style="pointer-events: none;">
+                <source src="./images/vid1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-wrapper" id="video4Wrapper">
+            <div class="locked" id="lock4">Watch the first video to unlock</div>
+            <video id="video4" style="pointer-events: none;">
+                <source src="./images/vid1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-wrapper" id="video5Wrapper">
+            <div class="locked" id="lock5">Watch the first video to unlock</div>
+            <video id="video5" style="pointer-events: none;">
+                <source src="./images/vid1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-wrapper" id="video6Wrapper">
+            <div class="locked" id="lock6">Watch the second video to unlock</div>
+            <video id="video6" style="pointer-events: none;">
+                <source src="./images/vid1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="testPaperWrapper" class="locked" style="display: none;">
+            <a href="./test.html" id="testPaperLink" class="locked-link" style="pointer-events: none;">
+                Access Test Paper
+            </a>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Learning Platform</p>
+    </footer>
+
+    <script src="./video.js"></script>
+</body>
+</html>

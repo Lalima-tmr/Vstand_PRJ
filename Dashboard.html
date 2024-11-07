@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./dashboard.css">
+
+</head>
+<body class="light">
+    <nav>
+        <h1>Dashboard</h1>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="./login.html" onclick="logout()">Logout</a></li>
+          </ul>
+        <button id="modeToggle" aria-label="Toggle light/dark mode">🌙</button>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <a href="./profile.html" aria-label="View full profile">
+                <i class="fab fa-pen-f icon-background"></i>
+                <img id="displayProfilePic" alt="User's Profile Picture" />
+                <p><strong>Name:</strong> <span id="displayName">N/A</span></p>
+                <p><strong>Email:</strong> <span id="displayEmail">N/A</span></p>
+                <p><strong>Password:</strong> <span id="displayPassword">******</span></p>
+                <p><strong>College:</strong> <span id="displayCollege">N/A</span></p>
+                <p><strong>Qualification:</strong> <span id="displayQualification">N/A</span></p>
+                <p><strong>Gender:</strong> <span id="displayGender">N/A</span></p>
+                <p class="status completed">Status: Completed</p>
+                <i class="fas fa-edit edit-icon" title="Edit Profile"></i>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="./video.html">
+                <h2><i class="fas fa-video"></i> Video Tutorials</h2>
+                <p>Watch our video tutorials to enhance your learning experience.</p>
+                <p class="status in-progress">Status: In Progress</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="./test.html">
+                <h2><i class="fas fa-file-alt"></i> Test</h2>
+                <p>Complete the assessment to check your knowledge and earn certificates.</p>
+                <p class="status not-started">Status: Not Started</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="./certificate.html">
+                <h2><i class="fas fa-certificate"></i> Certification</h2>
+                <p>Earn certificates for the courses and tests you have completed successfully.</p>
+                <p class="status in-progress">Status: In Progress</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VStand4U Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>

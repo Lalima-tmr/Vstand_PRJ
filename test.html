@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment Test</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="./test.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="locked" id="lock-test">Watch all the video to unlock</div>
+    <div class="container" id="test">
+      <h1>HTML, CSS, JavaScript Quiz</h1>
+      <hr>
+      
+      <div class="question" data-correct="b">
+        <h3>1. What does HTML stand for?</h3>
+        <ul class="options">
+          <li><input type="radio" name="q1" value="a"> Hyperlink and Text Markup Language</li>
+          <li><input type="radio" name="q1" value="b"> Hypertext Markup Language</li>
+          <li><input type="radio" name="q1" value="c"> Home Tool Markup Language</li>
+          <li><input type="radio" name="q1" value="d"> Hyper Transfer Mark Language</li>
+        </ul>
+      </div>
+
+      <div class="question" data-correct="c">
+        <h3>2. Which CSS property is used to change the text color?</h3>
+        <ul class="options">
+          <li><input type="radio" name="q2" value="a"> font-color</li>
+          <li><input type="radio" name="q2" value="b"> text-style</li>
+          <li><input type="radio" name="q2" value="c"> color</li>
+          <li><input type="radio" name="q2" value="d"> background-color</li>
+        </ul>
+      </div>
+
+      <div class="question" data-correct="d">
+        <h3>3. What will the following CSS rule do?</h3>
+        <code>
+          .box { <br>
+            width: 100px;<br>
+            height: 100px;<br>
+            background-color: red;<br>
+            margin: 0 auto;<br>
+          }
+        </code>
+        <ul class="options">
+          <li><input type="radio" name="q3" value="a"> Create a full-width red box</li>
+          <li><input type="radio" name="q3" value="b"> Create a centered, full-screen red box</li>
+          <li><input type="radio" name="q3" value="c"> Create a 100px x 100px box aligned to the left</li>
+          <li><input type="radio" name="q3" value="d"> Create a 100px x 100px red box centered horizontally</li>
+        </ul>
+      </div>
+
+      <div class="question" data-correct="a">
+        <h3>4. What will the following JavaScript snippet log?</h3>
+        <code>
+          let x = [1, 2, 3]; <br>
+          console.log(typeof x);
+        </code>
+        <ul class="options">
+          <li><input type="radio" name="q4" value="a"> object</li>
+          <li><input type="radio" name="q4" value="b"> array</li>
+          <li><input type="radio" name="q4" value="c"> number</li>
+          <li><input type="radio" name="q4" value="d"> undefined</li>
+        </ul>
+      </div>
+
+      <div class="question" data-correct="c">
+        <h3>5. What will the following HTML code display?</h3>
+        <code>
+          &lt;h1&gt;Hello &lt;span&gt;World&lt;/span&gt;&lt;/h1&gt;
+        </code>
+        <ul class="options">
+          <li><input type="radio" name="q5" value="a"> Hello</li>
+          <li><input type="radio" name="q5" value="b"> Hello &lt;span&gt;World&lt;/span&gt;</li>
+          <li><input type="radio" name="q5" value="c"> Hello World</li>
+          <li><input type="radio" name="q5" value="d"> Nothing, it throws an error</li>
+        </ul>
+      </div>
+
+      <div class="question" data-correct="b">
+        <h3>6. What will the following JavaScript code output?</h3>
+        <code>
+          console.log(2 + '2'); 
+        </code>
+        <ul class="options">
+          <li><input type="radio" name="q6" value="a"> 4</li>
+          <li><input type="radio" name="q6" value="b"> "22"</li>
+          <li><input type="radio" name="q6" value="c"> NaN</li>
+          <li><input type="radio" name="q6" value="d"> Error</li>
+        </ul>
+      </div>
+
+      <button id="submit">Submit</button>
+
+      <div class="certificate-link" id="certificate-link">
+        <button onclick="accessCertificate()">🎉 Access your Certificate!</button>
+      </div>
+
+      <div class="result" id="result"></div>
+  </div>
+
+  <script src="./video.js"></script>
+  <script src="./test.js"></script>
+
+</body>
+</html>

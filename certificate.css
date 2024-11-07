@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+
+  .certificate {
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: dodgerblue;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .download-btn:hover {
+    background-color: #45a049;
+  }

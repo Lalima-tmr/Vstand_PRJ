@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./help.css">
+    <link rel="stylesheet" href="./modeToggle.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </label>
+    
+          <label class="logo">
+            <a href="https://vstand4usolutions.com/">
+              <img src="./images/logo.png" alt="VStand4U Solutions Logo">
+            </a>
+          </label>
+    
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./Dashboard.html">Video</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+          </ul>
+    
+          <a href="./Dashboard.html"><img src="./images/profile.webp" alt="Profile Picture" class="profile-pic" id="displayProfilePic">
+            <input type="file" id="profileUpload" accept="image/*"></a>
+          
+    
+           <button id="modeToggle" aria-label="Toggle light/dark mode">🌙</button>
+        </nav>
+      </header>
+
+    <section id="contact" class="sec contact">
+        <h2>Need Help? We are Here</h2>
+          <form action="https://formspree.io/f/meoqavzn" method="post" onsubmit="clearForm(event)">
+          <div class="form-div">
+            <div class="user-input">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+              </div>
+        
+              <div class="user-input">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+              </div>
+        
+              <div class="user-input">
+                <label for="email">Email Id:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+        
+              <div class="user-input">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+        
+              <input type="submit" value="Submit" class="submit-btn">
+          </div>
+        </form>
+      </section>
+    
+      <section class="sec sec2" id="help">
+          <div class="inner">
+            <div class="box_title">
+              <h2 class="title">Frequently Asked Questions</h2>
+            </div>
+            <div class="box_accordion">
+              <div class="accordion_item">
+                <button type="button" class="accordion_title">How much time do I have to spend?</button>
+                <p class="accordion_cont">
+                  We recommend you spend at least 1-2 hours every day to maintain the daily streaks. It's all about keeping the momentum going! 🔥
+                </p>
+              </div>
+              <div class="accordion_item">
+                <button type="button" class="accordion_title">Is this an in-person or online course?</button>
+                <p class="accordion_cont">
+                  This is an online course where you can participate from the comfort of your home. 🏠
+                </p>
+              </div>
+              <div class="accordion_item">
+                <button type="button" class="accordion_title">Do I need prior coding experience?</button>
+                <p class="accordion_cont">No prior coding experience is required. Trust us!</p>
+              </div>
+              <div class="accordion_item">
+                <button type="button" class="accordion_title">What technical requirements do I need?</button>
+                <p class="accordion_cont">You need a laptop or PC. Mobile phones are not supported for this course.</p>
+              </div>
+              <div class="accordion_item">
+                <button type="button" class="accordion_title">How does the placement support work?</button>
+                <p class="accordion_cont">
+                  Upon completing the course, you'll gain access to VStand4U's Talent Pool, offering job matching opportunities, resume coaching, and mock interviews. While employment is not guaranteed, VStand4U Solutions boasts a 90% success rate in similar courses offered in Bangalore.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+    
+      <footer id="footer" class="footer">
+        <div class="footer-content">
+          <div class="grid">
+            <div class="footer-logo">
+              <a href="https://vstand4usolutions.com/">
+                <img src="./images/logo.png" width="150" height="150" alt="VStand4U Solutions Logo">
+              </a>
+            </div>
+            <div class="p-text footer-logo">
+              <p>Outer Ring Rd, B Channasandra, Bennigana Halli, Bengaluru, Karnataka 560043</p>
+            </div>
+          </div>
+          <div class="grid">
+            <p>SEND MESSAGE</p><br>
+            <p>Call us or email us for inquiries.</p>
+          
+            <div class="contact-links">
+              <a href="tel:+917618709430" aria-label="Phone">
+                <i class="fas fa-phone-alt"></i><span> +917618709430</span>
+              </a>
+              <a href="mailto:info@vstand4usolutions.com" aria-label="Email">
+                <i class="fas fa-envelope"></i><span> info@vstand4usolutions.com</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="grid">
+            <p>PAGES</p>
+            <a href="#">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./video.html">Video</a>
+            <a href="https://vstand4usolutions.com/privacy-policy/">Privacy Policy</a>
+            <a href="https://vstand4usolutions.com/terms-and-conditions/">Terms and Conditions</a>
+          </div>
+          <div class="grid">
+            <p>Follow us on Social Media</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/people/Vstand4U-Solutions/61559932571887/" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"><span>Facebook</span></i>
+              </a>
+              <a href="https://www.instagram.com/vstand4usolutions/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"><span>Instagram</span></i>
+              </a>
+              <a href="https://www.youtube.com/@Vstand4USolutions-qm9sk" target="_blank" aria-label="youtube">
+                <i class="fab fa-youtube"><span>youtube</span></i>
+              </a>
+              <a href="https://www.linkedin.com/company/vstand4u-solutions?originalSubdomain=in" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"><span>LinkedIn</span></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="footer-text">Powered by Vstand4U Solutions. All rights reserved.</p>
+      </footer>
+</body>
+<!-- <script src="./help.js"></script> -->
+ <script>
+
+function clearForm(event) {
+    event.preventDefault();
+  
+    fetch("https://formspree.io/f/meoqavzn", {
+      method: "POST",
+      body: new FormData(event.target),
+      headers: { "Accept": "application/json" }
+    })
+      .then(response => {
+        if (response.ok) {
+          alert("Form submitted successfully!");
+          event.target.reset();
+        } else {
+          alert("Oops! There was a problem submitting your form.");
+        }
+      })
+      .catch(error => {
+        alert("Oops! There was a problem submitting your form.");
+      });
+  }
+  
+  document.querySelectorAll('.accordion_title').forEach((button) => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('is_active');
+        document.querySelectorAll('.accordion_item').forEach((otherItem) => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('is_active');
+          }
+        });
+      });
+    });
+
+    function logout() {
+      localStorage.removeItem('isAuthenticated');
+      alert('You have been logged out!');
+      window.location.href = 'login.html';
+    }
+ </script>
+ 
+<script src="./modeToggle.js"></script>
+</html>

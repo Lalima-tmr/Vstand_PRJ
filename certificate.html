@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate of Achievement</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  
+  <link href="./certificate.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="certificate">
+    <img src="./images/logo.png" alt="vstand4u" width="100px" height="100px">
+    <h1>Certificate of Achievement</h1>
+    <p>This certifies that</p>
+    <div class="name" id="displayName"></div>
+    <p>has successfully completed the MCQ Assessment Test with excellence!</p>
+    <button class="download-btn" onclick="window.print()">Download Certificate</button>
+  </div>
+
+  <script>
+    document.getElementById('displayName').textContent = localStorage.getItem('name');
+  </script>
+</body>
+
+</html>

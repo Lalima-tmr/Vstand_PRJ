@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    
+    <link href="./profile.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h2>Profile</h2>
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="text" id="college" placeholder="College" required />
+        <input type="text" id="qualification" placeholder="Qualification" required />
+
+        <div class="gender-container">
+            <label class="gender-label">
+                <input type="radio" name="gender" value="Male" required />
+                Male
+            </label>
+            <label class="gender-label">
+                <input type="radio" name="gender" value="Female" />
+                Female
+            </label>
+            <label class="gender-label">
+                <input type="radio" name="gender" value="Other" />
+                Other
+            </label>
+        </div>
+        <input type="file" id="profilePic" accept="image/*" required />
+        <div class="btn">
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="cancle()">Cancle</button>
+        </div>
+    </form>
+</div>
+
+<script src="./profile.js"></script>
+
+</body>
+</html>

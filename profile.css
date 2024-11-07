@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #000000, #0e1c47);
+    background-size: 200% 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    animation: gradientShift 10s ease infinite;
+}
+.container {
+    background-color: #1a7ee08c;
+    background-size: 200% 200%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 40px 40px black;
+    width: 50%;
+    animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { 
+        background-position: 0% 50%; 
+    }
+    50% { 
+        background-position: 100% 50%; 
+    }
+    100% { 
+        background-position: 0% 50%; 
+    }
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:hover {
+    background-color: #0e1c474b;
+}
+
+.gender-container {
+    margin: 15px 0;
+}
+
+.gender-label {
+    display: inline-block;
+    margin-right: 15px; 
+    font-size: 16px;
+    cursor: pointer; 
+}
+
+.gender-label input[type="radio"] {
+    margin-right: 5px; 
+    accent-color: #4CAF50; 
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.btn button {
+    padding: 10px;
+    background: linear-gradient(135deg, dodgerblue, black);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(-135deg, dodgerblue, black);
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+  <link rel="stylesheet" href="./signup.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+
+      <form onsubmit="registerUser(event)">
+        <div class="user-details">
+          <div class="input-box">
+            <label for="first-name"><i class="fa fa-user"></i></label>
+            <input type="text" id="first-name" required placeholder="*Enter First Name">
+          </div>
+
+          <div class="input-box">
+            <label for="middle-name"><i class="fa fa-user"></i></label>
+            <input type="text" id="middle-name" placeholder="Enter Middle Name">
+          </div>
+
+          <div class="input-box">
+            <label for="last-name"><i class="fa fa-user"></i></label>
+            <input type="text" id="last-name" required placeholder="*Enter Last Name">
+          </div>
+
+          <div class="input-box">
+            <label for="email"><i class="fa fa-envelope"></i></label>
+            <input type="email" id="email" required placeholder="*Enter Email">
+          </div>
+
+          <div class="input-box">
+            <label for="phone"><i class="fa fa-phone"></i></label>
+            <input type="tel" id="phone" required placeholder="*Enter Mobile no." 
+                   pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+          </div>
+
+          <div class="input-box">
+            <label for="college-dropdown"><i class="fa fa-building"></i></label>
+            <select id="college-dropdown" required>
+              <option value="" disabled selected>*Select your College</option>
+              <option value="IIT">Indian Institute of Science</option>
+              <option value="NIT">International Institute of Information Technology, Bangalore (IIIT-B)</option>
+              <option value="VTU">R.V. College of Engineering (RVCE)</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" id="college-name" class="other-input" placeholder="Enter College Name">
+          </div>
+
+          <div class="input-box">
+            <label for="qualification-dropdown"><i class="fa fa-graduation-cap"></i></label>
+            <select id="qualification-dropdown" required>
+              <option value="" disabled selected>*Select Qualification</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="M.Tech">MCA</option>
+              <option value="MBA">MBA</option>
+              <option value="M.Tech">BCA</option>
+              <option value="M.Tech">Bsc</option>
+              <option value="M.Tech">Msc</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" id="qualification-input" class="other-input" placeholder="Enter Qualification">
+          </div>
+
+          <div class="input-box">
+            <label for="branch-dropdown"><i class="fa fa-graduation-cap"></i></label>
+            <select id="branch-dropdown" required>
+              <option value="" disabled selected>*Select Branch</option>
+              <option value="B.Tech">CSE</option>
+              <option value="M.Tech">ECE</option>
+              <option value="MBA">ISE</option>
+              <option value="M.Tech">CIVIL</option>
+              <option value="M.Tech">ME</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" id="branch-input" class="other-input" placeholder="Enter Qualification">
+          </div>
+
+          <div class="input-box">
+            <label for="password"><i class="fa fa-lock"></i></label>
+            <input type="password" id="password" required placeholder="*Enter Password">
+          </div>
+
+          <div class="input-box">
+            <label for="confirm-password"><i class="fa fa-lock"></i></label>
+            <input type="password" id="confirm-password" required placeholder="*Confirm Password">
+          </div>
+        </div>
+
+        <div class="gender-details">
+          <span class="gender-title">Gender</span>
+
+          <div class="category">
+            <label for="dot-1">
+              <input type="radio" name="gender" id="dot-1" value="Male" required>
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+
+            
+            <label for="dot-2">
+              <input type="radio" name="gender" id="dot-2" value="Female">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+
+            <label for="dot-3">
+              <input type="radio" name="gender" id="dot-3" value="Other">
+              <span class="dot three"></span>
+              <span class="gender">Other</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="button">
+          <button type="submit">Register</button>
+        </div>
+
+        <p>Already a User? <a href="./login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.form{
+    text-align: center;
+}
+
+body{
+    font-weight: bold;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer{ 
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid rgba(137, 43, 226, 0.396);
+    box-shadow: 10px 10px 10px grey;
+    text-align: center;
+    padding: 30px;
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input{
+    border: 2px solid black;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 9px;
+    border-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input:hover {
+    background-color: #5555555f;
+  }
+
+.login-img{
+    border-radius: 125px;
+    box-shadow: 2px 2px 5px black;
+    height: 80px;
+    width: 80px;
+}
+.form-group a, p a{
+    color: dodgerblue;
+    font-size: 12px;
+}
+
+.form-group p{
+    font-size: 10px;
+}
+
+.btn{
+    width: 100%;
+    border: none;
+    padding: 9px;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, dodgerblue, black);
+}
+
+.btn:hover{
+    background: linear-gradient(-135deg, dodgerblue, black);
+}
